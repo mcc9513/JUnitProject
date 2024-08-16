@@ -16,6 +16,6 @@ Test Files
   - testLoginUser_Success: Validates that a user can log in with the correct username and password.<br>
   - testUpdateUserProfile_Success: Ensures that a user's profile can be updated with a new username, password, and email.
 
-Running the Tests
+Running the Tests:<br>
 To run the tests, ensure you have JUnit 4 and Mockito included in your project dependencies. You can run the tests using your IDE's built-in test runner or via the command line with Maven.
 
