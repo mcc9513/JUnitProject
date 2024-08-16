@@ -1,1 +1,1 @@
-# junitProject
+# JUnitProject
