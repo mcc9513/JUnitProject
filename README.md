@@ -2,9 +2,8 @@
 
 Test Files
 
-1. BookServiceTest.java<br> 
+1. BookServiceTest.java
 - Purpose: Tests the functionality of the BookService class, which handles operations related to books, such as searching for books, purchasing books, and adding reviews.
-
 - Key Tests:
 * testSearchBook_Found: Verifies that books matching a keyword can be found.
 * testPurchaseBook_Success: Confirms that a book can be successfully purchased by a registered user.
