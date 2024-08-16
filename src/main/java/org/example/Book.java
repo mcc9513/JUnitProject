@@ -51,12 +51,15 @@ public class Book {
         this.genre = genre;
     }
 
-    public List<String> getReviews() {
-        return reviews;
+    public void addReview(String review) {
+        if (review != null && !review.isEmpty()) {
+            this.reviews.add(review);
+        }
     }
 
-    public void setReviews(List<String> reviews) {
-        this.reviews = reviews;
+    // Method to get reviews
+    public List<String> getReviews() {
+        return new ArrayList<>(reviews);
     }
 
     public double getPrice() {
