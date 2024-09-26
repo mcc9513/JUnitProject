@@ -1,21 +1,37 @@
-# JUnitProject
+Dockerized Application
 
-Test Files
+## Prerequisites
 
-1. BookServiceTest.java
-- Purpose: Tests the functionality of the BookService class, which handles operations related to books, such as searching for books, purchasing books, and adding reviews.
-- Key Tests:
-  * testSearchBook_Found: Verifies that books matching a keyword can be found.
-  * testPurchaseBook_Success: Confirms that a book can be successfully purchased by a registered user.
-  * testAddBookReview_Success: Ensures that a review can be added to a book that a user has purchased.
+- [Docker](https://docs.docker.com/get-docker/) installed.
 
-2. UserServiceTest.java
-- Purpose: Tests the functionality of the UserService class, which manages user registration, login, and profile updates.
-- Key Tests:
-  - testRegisterUser_Success: Checks that a new user can be registered successfully.<br>
-  - testLoginUser_Success: Validates that a user can log in with the correct username and password.<br>
-  - testUpdateUserProfile_Success: Ensures that a user's profile can be updated with a new username, password, and email.
+## Build and Run
 
-Running the Tests:<br>
-To run the tests, ensure you have JUnit 4 and Mockito included in your project dependencies. You can run the tests using your IDE's built-in test runner or via the command line with Maven.
+### 1. Build the Docker Image
+```bash
+docker build -t my-app .
+```
 
+### 2. Run the Docker Container
+```bash
+docker run -p 8080:8080 my-app
+```
+
+### 3. Access the Application
+Open your browser and go to:
+```
+http://localhost:8080
+```
+
+## Troubleshooting
+
+- Check logs if the container fails:
+  ```bash
+  docker logs <container_id>
+  ```
+
+## Cleanup
+Stop and remove the container:
+```bash
+docker stop <container_id>
+docker rm <container_id>
+```
